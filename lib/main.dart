@@ -37,23 +37,51 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.white,
         body: SafeArea(
           child: Center(
-            child: Stack(children: <Widget>[
-              Container(
-                child: Image.asset(
-                  'assets/images/sampleintroimage.jpg',
-                  width: 200,
-                  height: 200,
+            child: Column(
+              children: <Widget>[
+                Stack(
+                  children: <Widget>[
+                    Container(
+                      child: Image.asset(
+                        'assets/images/sampleintroimage.jpg',
+                        width: 200,
+                        height: 200,
+                      ),
+                    ),
+                    Opacity(
+                      opacity: 0.2,
+                      child: Container(
+                        color: Colors.black,
+                        width: 200,
+                        height: 200,
+                      ),
+                    ),
+                  ],
                 ),
-              ),
-              Opacity(
-                opacity: 0.2,
-                child: Container(
-                  color: Colors.black,
-                  width: 200,
-                  height: 200,
+                SizedBox(
+                  height: 20,
                 ),
-              ),
-            ]),
+                Stack(
+                  children: <Widget>[
+                    Container(
+                      child: Image.asset(
+                        'assets/images/sampleintroimage.jpg',
+                        width: 200,
+                        height: 200,
+                      ),
+                    ),
+                    Opacity(
+                      opacity: 0.2,
+                      child: Container(
+                        color: Colors.black,
+                        width: 200,
+                        height: 200,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
