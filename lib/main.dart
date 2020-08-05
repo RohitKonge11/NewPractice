@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Opacity(
-                opacity: 0.4,
+                opacity: 0.2,
                 child: Container(
                   color: Colors.black,
                   width: 200,
