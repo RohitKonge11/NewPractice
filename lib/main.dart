@@ -41,15 +41,15 @@ class MyApp extends StatelessWidget {
               Container(
                 child: Image.asset(
                   'assets/images/sampleintroimage.jpg',
-                  width: 200,
-                  height: 200,
+                  width: 100,
+                  height: 100,
                 ),
               ),
               Opacity(
-                opacity: 0.2,
+                opacity: 0.1,
                 child: Container(
                   color: Colors.black,
-                  width: 200,
+                  width: 100,
                   height: 200,
                 ),
               ),
